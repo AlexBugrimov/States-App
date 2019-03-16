@@ -1,4 +1,4 @@
-package dev.bug.simpleservlet;
+package dev.bug.simpleservlet.servlet;
 
 import dev.bug.simpleservlet.repository.Repository;
 import dev.bug.simpleservlet.repository.StatesRepository;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(urlPatterns = {"/states", "/"})
-public class AppServlet extends HttpServlet {
+public class StatesServlet extends HttpServlet {
 
     private static final String INDEX_JSP = "/WEB-INF/view/index.jsp";
     private Repository repository;
